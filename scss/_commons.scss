@@ -3,6 +3,15 @@ $mainColor: black;
 $secondaryColor: #1e1e1e;
 $keyColor: #ffffff;
 
+//map
+$paleta:(
+    'uno': $mainColor,
+    'dos': $secondaryColor,
+    'tres':$keyColor,
+    'cuatro':red,
+    'cinco': blue,
+);
+
 //sizing
 $w-100: 100%;
 $w-75: 75%;

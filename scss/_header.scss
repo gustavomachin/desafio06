@@ -5,17 +5,15 @@
 }
 
 #botonera {
-  background-color: #1e1e1e;
+  background-color: map-get($map: $paleta, $key: 'dos');
   font-size: 1.8rem;
   color: white;
   font-family: "Barlow Condensed", sans-serif;
 }
-
+//extend
 #submenu {
-  background-color: #1e1e1e;
+  @extend #botonera;
   font-size: 1.6rem;
-  color: white;
-  font-family: "Barlow Condensed", sans-serif;
 }
 
 .encabezadoImg {

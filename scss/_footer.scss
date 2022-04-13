@@ -14,22 +14,19 @@
     }
 }
 
-.pieIconYouTube {
-    /*size*/
+//mixins
+@mixin mediaIcons($color) {
     width: 50px;
     margin: 0 10px;
-    color: $secondaryColor;
+    color: map-get($map: $paleta, $key: 'dos');
     &:hover{
-        color: red;
+        color: $color;
     }
 }
+.pieIconYouTube{
+    @include mediaIcons(map-get($map: $paleta, $key: 'cuatro'))
+}
 .pieIconFace {
-    /*size*/
-    width: 50px;
-    margin: 0 10px;
-    color: $secondaryColor;
-    &:hover{
-        color: blue;
-    }
+    @include mediaIcons(map-get($map: $paleta, $key: 'cinco'))
 }
 /*--------------------------------------------*/
